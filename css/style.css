@@ -1,0 +1,594 @@
+/**************/
+/*HEADER*/
+/**************/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.mainlogo {
+  height: 2.2rem;
+}
+
+/*************/
+/*NAVIOGATION*/
+/*************/
+
+.mainNavList {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+.mainNavLink:link,
+.mainNavLink:visited {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 9px;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.mainNavLink:hover,
+.mainNavLink:active {
+  color: #cf711f;
+}
+
+.mainNavLink.navCta:link,
+.mainNavLink.navCta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #e67e22;
+}
+
+.mainNavLink.navCta:hover,
+.mainNavLink.navCta:active {
+  background-color: #cf711f;
+}
+
+/**************/
+/*HERO sECTION*/
+/**************/
+.sectionHero {
+  background-color: #fdf2e9;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 9.8rem;
+}
+
+.heroDescrip {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.heroIMG {
+  width: 100%;
+}
+
+.deliveredMeals {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 8rem;
+}
+
+.deliveredIMG {
+  display: flex;
+}
+
+.deliveredIMG img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid #fdf2e9;
+}
+.deliveredIMG img:last-child {
+  margin-right: 0;
+}
+
+.deliveredText {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.deliveredText span {
+  color: #cf711f;
+  font-weight: 700;
+}
+
+/**********************/
+/*SECTION FEATURED*/
+/**********************/
+
+.sectionFeatured {
+  padding: 4.8rem 0 3.2rem 0;
+}
+
+.headingFeatured {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: #888;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo {
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
+
+/**********************/
+/*SECTION HOW IT WORKS*/
+/**********************/
+.sectionHow {
+  padding: 9.6rem 0;
+}
+
+.stepNum {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+
+.stepIMGBox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stepIMGBox::before,
+.stepIMGBox::after {
+  content: "";
+  display: block;
+
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.stepIMGBox::before {
+  width: 60%;
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+  z-index: -1;
+}
+.stepIMGBox::after {
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: #fae5d3;
+  z-index: -1;
+}
+
+.stepIMG {
+  width: 35%;
+}
+
+.stepDescrip {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+/**********************/
+/*SECTION MEALS*/
+/**********************/
+
+.sectionMeals {
+  padding: 9.6rem 0;
+}
+
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.meal:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.mealContent {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.mealTags {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #333;
+  border-radius: 100px;
+  font-weight: 600;
+}
+
+.tag-vegetarian {
+  background-color: #51cf66;
+}
+
+.tag-vegan {
+  background-color: #94d82d;
+}
+
+.tag-paleo {
+  background-color: #ffd43b;
+}
+
+.mealTitle {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.mealDetails {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.mealDetail {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.mealIMG {
+  width: 100%;
+}
+
+.mealIcon {
+  font-size: 2.4remv;
+  color: #e67e22;
+}
+
+.allRecipes {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+/**********************/
+/*SECTION TESTERS*/
+/**********************/
+
+.sectionTesters {
+  background-color: #fdf2e9;
+  display: grid;
+  grid-template-columns: 60fr 40fr;
+  align-items: center;
+}
+
+.containerTest {
+  padding: 9.6rem;
+}
+
+.testers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
+
+.testerIMG {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.testText {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+
+.testerName {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.galleryItems {
+  overflow: hidden;
+}
+
+.galleryItems img {
+  display: block;
+  width: 100%;
+
+  transition: all 0.4s;
+}
+.galleryItems img:hover {
+  transform: scale(1.1);
+}
+
+/**********************/
+/*SECTION PRICING */
+/**********************/
+
+.sectionPrice {
+  padding: 9.6rem 0;
+}
+
+.pricingPlan {
+  border-radius: 12px;
+  width: 75%;
+}
+
+.planStarter {
+  justify-self: end;
+  border: 3px solid #fdf2e9;
+  padding: 4.5rem;
+}
+
+.planComplete {
+  background-color: #fdf2e9;
+  padding: 4.8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.planComplete::after {
+  content: "Best value";
+  position: absolute;
+
+  top: 6%;
+  right: -18%;
+  transform: rotate(45deg);
+
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  background-color: #ffd43b;
+  padding: 0.8rem 8rem;
+}
+
+.planHeader {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.planName {
+  color: #cf711f;
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
+}
+
+.planPrice {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+
+.planPrice span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+
+.planText {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: #6f6f6f;
+}
+
+.planSign {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+
+.planDetail {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.featureIcon {
+  color: #e67e22;
+  font-size: 2.4rem;
+  margin-bottom: 3.2rem;
+
+  background-color: #fdf2e9;
+  border-radius: 50%;
+  padding: 1.6rem;
+}
+.featureTitle {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+.featureText {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+/**********************/
+/*SECTION CTA */
+/**********************/
+
+.sectionCTA {
+  padding: 9.6rem 0;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #e67e22;
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  height: 50rem;
+  overflow: hidden;
+}
+
+.CTATextBox {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #45260a;
+}
+.cta .headingSecondary {
+  margin-bottom: 3.2rem;
+  color: #45260a;
+}
+
+.CTAText {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+.CTAIMGBox {
+  background-image: linear-gradient(
+      to right bottom,
+      rgb(235, 152, 78, 0.35),
+      rgb(230, 126, 34, 0.35)
+    ),
+    url("../img/eating.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.CTAForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+.CTAForm *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgb(250, 229, 211, 50);
+}
+
+.CTAForm label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.CTAForm label::placeholder {
+  color: #aaa;
+}
+.CTAForm input,
+.CTAForm select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.footer {
+  padding: 9.6rem 0;
+}
+
+.logocol {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerLogo {
+  display: block;
+  margin-bottom: 3rem;
+}
+.socialIcon {
+  font-size: 2.4rem;
+}
+.SocialList {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  color: #767676;
+  line-height: 1.6;
+  margin-top: auto;
+}
+
+.footerHeading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+}
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+}
+.footerList {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footerLink:link,
+.footerLink:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footerLink:hover,
+.footerLink:active {
+  color: #555;
+}
